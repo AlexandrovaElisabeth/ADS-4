@@ -40,7 +40,7 @@ int cbinsearch(int* arr, int len, int value) {
                 c++;
                 count++;
             }
-        return count;    
+        return count;
         } else if (arr[mid] < value) {
             left = mid;
         } else {right = mid;}
