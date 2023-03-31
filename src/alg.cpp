@@ -38,12 +38,10 @@ int cbinsearch(int* arr, int len, int value) {
         int mid = left + (right - left) / 2;
         if (arr[mid] == value) {
             return mid;
-        }
-        else if (arr[mid] < value) {
+        } else if (arr[mid] < value) {
             left = mid + 1;
-        }
-        else {
-            right = mid - 1;
+        } else 
+        {right = mid - 1;
         }
     }
     return 0;
@@ -56,7 +54,6 @@ int countPairs3(int* arr, int len, int value) {
         if (index != 0) {
             count++;
         }
-
     }
      return count;
 }
